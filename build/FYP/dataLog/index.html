@@ -60,7 +60,13 @@
 </head>
 
 <body style="width:100%; height: 100%;">
-    <div id="container" style="width:70%;height: 70%;margin-right:15%; margin-left: 15%;margin-top: 100px"></div>
+    <div id="container" style="width:60%;height: 60%;margin-top: 100px; float: left"></div>
+    <div id="container2" style="width:30%;margin-left: 3%;margin-right: 3%;margin-top: 100px; float: right">
+
+    <p>这里可以通过图表右上角的数据视图组件，查看日志数据视图</p>
+    <p>还可以在图表下方左右拖动选项条，选择起始时间、终止时间</p>
+
+    </div>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
 
     <script type="text/javascript">
@@ -116,8 +122,7 @@
             },
             toolbox: {
                 feature: {
-                    restore: {},
-                    dataZoom: {}
+                    dataView: {}
                 }
             },
             brush: {
