@@ -1,0 +1,167 @@
+/*
+Copyright 2008-2013 Concur Technologies, Inc.
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may
+not use this file except in compliance with the License. You may obtain
+a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+License for the specific language governing permissions and limitations
+under the License.
+*/
+
+
+////////////////////////////////////////////////////////////////////////////////
+// CUSTOMIZE SLATE
+////////////////////////////////////////////////////////////////////////////////
+// Use these settings to help adjust the appearance of Slate
+
+
+
+// TG COLORS
+////////////////////
+$tg-green: #70cf32;
+$tg-dark-green: #61b729;
+$tg-slate: #2d3033;
+$tg-grey: #6c7279;
+$tg-teal: #65d5d9;
+$tg-red: #f6574d;
+$tg-bermuda-green: #7be3bd;
+$base-grey-10: #f4f4f5;
+$base-grey-5: rgba($base-grey-10, .5);
+$base-grey-30: #e2e6e8;
+$base-grey-70: #a4aeb3;
+$white: #ffffff;
+$black: #000000;
+$liao-red:#d05;
+$liao-black:#666;
+// BACKGROUND COLORS
+////////////////////
+
+//左菜单黑色主题配色
+// $nav-bg: #2E3336 !default;    //左菜单背景色
+// $nav-subitem-bg: #1E2224 !default;   //左菜单选中的区块背景色  
+// $nav-active-bg: #0F75D4 !default;   //左菜单选中的二级标题显示颜色
+// $nav-active-parent-bg: #2b4c56; // 当前选中标题的一级父标题显示颜色
+
+// 左菜灰色配色
+$nav-bg:#f5f7f9;
+$nav-subitem-bg:#f5f7f9;
+$nav-active-bg:#f5f7f9;
+$nav-active-parent-bg:#f5f7f9;
+
+
+// 右代码块黑色配色
+// $examples-bg:#202022;
+// $code-bg:#2b2b2e;
+// $code-annotation-bg:#404042;
+
+// $examples-bg:$white;
+// $code-bg:#2e363d;
+// // $code-bg:#1e2224;
+// $code-annotation-bg:#1e2224;
+
+// 右代码块github配色
+$examples-bg:$white;
+$code-bg:#fafafa;
+// $code-bg:#f6f8fa;
+$code-annotation-bg:$base-grey-30;
+
+
+$lang-select-border: #000 !default;
+$lang-select-bg: #1E2224 !default;
+$lang-select-active-bg: $examples-bg !default; // feel free to change this to blue or something
+$lang-select-pressed-bg: #111 !default; // color of language tab bg when mouse is pressed
+
+//中间白色
+$main-bg: $white;
+//中间淡蓝色
+// $main-bg: #F3F7F9 !default;
+
+
+// notice块颜色
+$aside-notice-bg: #429BCE;
+$aside-warning-bg: #E1AD05;
+$aside-success-bg: #6ac174;
+$search-notice-bg: #c97a7e;
+
+
+// TEXT COLORS
+////////////////////
+$main-text: $black; // main content text color
+// $main-text:#2e363d;
+// $main-text: #333 !default; // main content text color
+
+// 左菜单白色字体配色
+// $nav-text: #fff !default;
+// $nav-active-text: #fff !default;
+// $nav-active-parent-text: #fff !default; // parent links of the current section
+
+//左菜单黑色字体配色
+$nav-text: $black;
+$nav-active-text: #1273e9;
+$nav-active-parent-text: #1273e9;
+
+
+//未知配色
+$lang-select-text: #fff !default; // color of unselected language tab text
+$lang-select-active-text: #fff !default; // color of selected language tab text
+$lang-select-pressed-text: #fff !default; // color of language tab text when mouse is pressed
+//中间代码块颜色
+$code: $liao-red;       
+
+
+// SIZES
+////////////////////
+$nav-width: 200px !default; // width of the navbar
+$examples-width: 40% !default; // portion of the screen taken up by code examples
+$logo-margin: 0px !default; // margin below logo
+$main-padding: 20px !default; // padding to left and right of content & examples
+$nav-padding: 15px !default; // padding to left and right of navbar
+$nav-v-padding: 10px !default; // padding used vertically around search boxes and results
+$nav-indent: 10px !default; // extra padding for ToC subitems
+$code-annotation-padding: 13px !default; // padding inside code annotations
+$h1-margin-bottom: 21px !default; // padding under the largest header tags
+$tablet-width: 930px !default; // min width before reverting to tablet size
+$phone-width: $tablet-width - $nav-width !default; // min width before reverting to mobile size
+
+
+// FONTS
+////////////////////
+%default-font {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;
+  font-size: 14px;    //中间字体
+}
+
+%header-font {
+  @extend %default-font;
+  font-weight: bold;
+}
+
+%code-font {
+  font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "Microsoft Yahei","微软雅黑", STXihei, "华文细黑",  serif;
+  font-size: 13px;
+  line-height: 1.5;
+
+}
+
+
+// OTHER
+////////////////////
+$nav-footer-border-color: #666 !default;
+$search-box-border-color: #666 !default;
+
+
+////////////////////////////////////////////////////////////////////////////////
+// INTERNAL
+////////////////////////////////////////////////////////////////////////////////
+// These settings are probably best left alone.
+
+%break-words {
+    word-break: break-all;
+    hyphens: auto;
+}
